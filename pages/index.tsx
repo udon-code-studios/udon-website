@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
@@ -17,33 +18,32 @@ const Home: NextPage = () => {
         </p>
         <p>
           Our philosophy is centered on producing software of the highest quality. That means that even the parts you
-          don't see need to be perfect.
+          don&apos;t see need to be perfect.
         </p>
         <p className="px-14 text-center italic">
-          "For you to sleep well at night, the aesthetic, the quality, has to be carried all the way
-          through."&nbsp;&nbsp;&nbsp;
+          &quot;For you to sleep well at night, the aesthetic, the quality, has to be carried all the way
+          through.&quot;&nbsp;&nbsp;&nbsp;
           <span>— Steve Jobs</span>
         </p>
         <p>
           Check out our{" "}
-          <a
-            href="/projects"
-            className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"
-          >
-            projects
-          </a>{" "}
-          to see what we've been up to. And{" "}
-          <a
-            href="/people"
-            className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"
-          >
-            meet the team
-          </a>{" "}
+          <Link href="/projects">
+            <a className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200">
+              projects
+            </a>
+          </Link>{" "}
+          to see what we&apos;ve been up to. And{" "}
+          <Link href="/people">
+            <a className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200">
+              meet the team
+            </a>
+          </Link>{" "}
           behind them before you go.
         </p>
         <h1 className="font-bold text-4xl pt-8 pb-3">Leo Battalora</h1>
         <p>
-          Hello! I'm Leo - the guy behind UCS. I really love udon noodes and occasionally do a bit coding on the side.
+          Hello! I&apos;m Leo - the guy behind UCS. I really love udon noodes and occasionally do a bit coding on the
+          side.
         </p>
         <p>
           As a child I really loved LEGOs for how they would each snap together perfectly. I hated the stickers that
@@ -57,39 +57,41 @@ const Home: NextPage = () => {
         </p>
         <p>
           Find me on{" "}
-          <a
-            href="https://github.com/leo6liu"
-            target="_blank"
-            className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"
-          >
-            GitHub
-          </a>
+          <Link href="https://github.com/leo6liu" passHref>
+            <a
+              target="_blank"
+              className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"
+            >
+              GitHub
+            </a>
+          </Link>
           ,{" "}
-          <a
-            href="https://twitter.com/LBattalora"
-            target="_blank"
-            className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"
-          >
-            Twitter
-          </a>
+          <Link href="https://twitter.com/LBattalora" passHref>
+            <a
+              target="_blank"
+              className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"
+            >
+              Twitter
+            </a>
+          </Link>
           , and{" "}
-          <a
-            href="https://www.linkedin.com/in/leo6/"
-            target="_blank"
-            className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"
-          >
-            LinkedIn
-          </a>
+          <Link href="https://www.linkedin.com/in/leo6/">
+            <a
+              target="_blank"
+              className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"
+            >
+              LinkedIn
+            </a>
+          </Link>
           .
         </p>
         <p>
           Mail me at{" "}
-          <a
-            href="mailto:leo.battalora@gmail.com"
-            className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"
-          >
-            leo.battalora@gmail.com
-          </a>
+          <Link href="mailto:leo.battalora@gmail.com" passHref>
+            <a className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200">
+              leo.battalora@gmail.com
+            </a>
+          </Link>
         </p>
       </div>
     </>
