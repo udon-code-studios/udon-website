@@ -12,7 +12,10 @@ function NavBar(): JSX.Element {
   const [darkMode, setDarkMode] = useState(true);
   useEffect(() => {
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
       document.documentElement.classList.add("dark");
       setDarkMode(true);
     } else {
@@ -44,12 +47,12 @@ function NavBar(): JSX.Element {
   };
 
   return (
-    <div className="w-full flex justify-center">
-      <div className="max-w-screen-lg flex justify-between items-center w-full py-4 px-8">
+    <div className="flex w-full justify-center">
+      <div className="flex w-full max-w-screen-lg items-center justify-between py-4 px-8">
         <Link href="/" passHref>
           <a>
             {/* logo */}
-            <div className="flex space-y-1 flex-col items-center w-min" onClick={() => setShowMenu(false)}>
+            <div className="flex w-min flex-col items-center space-y-1" onClick={() => setShowMenu(false)}>
               <h1 className="font-new-tegomin text-5xl">udon_</h1>
               <p className="font-new-tegomin text-xl tracking-wider">code studios</p>
             </div>
@@ -57,15 +60,18 @@ function NavBar(): JSX.Element {
         </Link>
 
         {/* navigation */}
-        <div className="flex text-lg font-medium items-center">
+        <div className="flex items-center text-lg font-medium">
           {/* mobile */}
-          <div className="sm:hidden flex items-center text-zinc-600 dark:text-zinc-400 text-3xl">
+          <div className="flex items-center text-3xl text-zinc-600 dark:text-zinc-400 sm:hidden">
             {/* menu button */}
             <button title="People" onClick={() => setShowMenu(!showMenu)} className="translate-y-1">
               {showMenu ? <icons.PhXBold className="h-8" /> : <icons.PhListBold className="h-8" />}
             </button>
             {/* menu contents */}
-            <div className="z-10 fixed bottom-0 top-0 left-0 right-0 mt-24 dark:bg-black bg-zinc-100 py-10" style={showMenu ? { opacity: 1 } : { opacity: 0 }}>
+            <div
+              className="fixed bottom-0 top-0 left-0 right-0 z-10 mt-24 bg-zinc-100 py-10 dark:bg-black"
+              style={showMenu ? { opacity: 1 } : { opacity: 0 }}
+            >
               <Trail open={showMenu}>
                 <Link href="/projects" passHref>
                   <a className="" onClick={() => setShowMenu(!showMenu)}>
@@ -89,7 +95,7 @@ function NavBar(): JSX.Element {
                 </Link>
                 <button
                   title="Toggle Dark Mode"
-                  className="hover:text-zinc-300 duration-200 pt-4"
+                  className="pt-4 duration-200 hover:text-zinc-300"
                   onClick={() => {
                     setShowMenu(!showMenu);
                     if (document.documentElement.classList.contains("dark")) {
@@ -110,26 +116,56 @@ function NavBar(): JSX.Element {
           </div>
 
           {/* desktop */}
-          <div className="space-x-5 items-center hidden sm:flex text-zinc-600 dark:text-zinc-400">
+          <div className="hidden items-center space-x-5 text-zinc-600 dark:text-zinc-400 sm:flex">
             <Link href="/projects" passHref>
-              <a className={pathname === "/projects" ? "dark:text-zinc-300 text-zinc-400" : "dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"}>projects</a>
+              <a
+                className={
+                  pathname === "/projects"
+                    ? "text-zinc-400 dark:text-zinc-300"
+                    : "duration-200 hover:text-zinc-400 dark:hover:text-zinc-300"
+                }
+              >
+                projects
+              </a>
             </Link>
             <Link href="/blog">
-              <a className={pathname === "/blog" ? "dark:text-zinc-300 text-zinc-400" : "dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"}>blog</a>
+              <a
+                className={
+                  pathname === "/blog"
+                    ? "text-zinc-400 dark:text-zinc-300"
+                    : "duration-200 hover:text-zinc-400 dark:hover:text-zinc-300"
+                }
+              >
+                blog
+              </a>
             </Link>
             <Link href="/notes">
-              <a title="Notes" className={pathname === "/notes" ? "dark:text-zinc-300 text-zinc-400" : "dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"}>
+              <a
+                title="Notes"
+                className={
+                  pathname === "/notes"
+                    ? "text-zinc-400 dark:text-zinc-300"
+                    : "duration-200 hover:text-zinc-400 dark:hover:text-zinc-300"
+                }
+              >
                 <icons.PhNoteBlankBold className="h-6" />
               </a>
             </Link>
             <Link href="/people">
-              <a title="People" className={pathname === "/people" ? "dark:text-zinc-300 text-zinc-400" : "dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"}>
+              <a
+                title="People"
+                className={
+                  pathname === "/people"
+                    ? "text-zinc-400 dark:text-zinc-300"
+                    : "duration-200 hover:text-zinc-400 dark:hover:text-zinc-300"
+                }
+              >
                 <icons.PhUsersThreeBold className="h-6" />
               </a>
             </Link>
             <button
               title="Toggle Dark Mode"
-              className="dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"
+              className="duration-200 hover:text-zinc-400 dark:hover:text-zinc-300"
               onClick={() => {
                 if (document.documentElement.classList.contains("dark")) {
                   document.documentElement.classList.remove("dark");

@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <meta name="description" content="Yeah... not really sure what this project is yet." />
+        <meta name="description" content="A software company focused on clean and beautiful code generation." />
         {/* added from realfavicongenerator.net */}
         <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
