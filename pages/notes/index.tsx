@@ -1,19 +1,19 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-const Blog: NextPage = () => {
+const Notes: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Blog</title>
+        <title>Notes</title>
       </Head>
 
       {/* page */}
       <div className="w-full flex flex-col items-center py-32 font-new-tegomin text-5xl">
-        <h1>Blog</h1>
+        <h1>Notes</h1>
       </div>
     </>
   );
 };
 
-export default Blog;
+export default Notes;
