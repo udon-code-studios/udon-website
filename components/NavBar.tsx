@@ -22,7 +22,7 @@ function NavBar(): JSX.Element {
 
   return (
     <div className="w-full flex justify-center">
-      <div className="max-w-screen-lg flex justify-between items-center w-full p-4">
+      <div className="max-w-screen-lg flex justify-between items-center w-full py-4 px-8">
         <Link href="/" passHref>
           <a>
             {/* logo */}
