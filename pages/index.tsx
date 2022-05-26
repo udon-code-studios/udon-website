@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>udon_</title>
+        <title>Udon Code Studios</title>
       </Head>
 
       {/* page */}
