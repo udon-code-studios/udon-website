@@ -12,8 +12,8 @@ const Home: NextPage = () => {
       <div className="w-full max-w-screen-sm flex flex-col py-12 mx-auto space-y-4 px-4">
         <h1 className="font-bold text-4xl pb-3">What is this?</h1>
         <p>
-          Udon Code Studios is a fake software company which provides a neutral ground for Leo and his friends to dream
-          up and implement our software fantasies.
+          Udon Code Studios (UCS) is a fake software company which provides a neutral ground for Leo and his friends to
+          dream up and implement our software fantasies.
         </p>
         <p>
           Our philosophy is centered on producing software of the highest quality. That means that even the parts you
@@ -42,15 +42,17 @@ const Home: NextPage = () => {
           behind them before you go.
         </p>
         <h1 className="font-bold text-4xl pt-8 pb-3">Leo Battalora</h1>
-        <p>Hello! I'm Leo. I really love udon noodes and do a bit coding on the side.</p>
+        <p>
+          Hello! I'm Leo - the guy behind UCS. I really love udon noodes and occasionally do a bit coding on the side.
+        </p>
         <p>
           As a child I really loved LEGOs for how they would each snap together perfectly. I hated the stickers that
           would come with them though, because there was no way to put them on perfectly - especially with my clumbsy
           8-year-old fingers.
         </p>
         <p>
-          Coding has been like playing with LEGOs again. Thanks to the amazing work of generations of Physicists,
-          Chemists, and Electrical Engineers, I get to live in this digital world where - with time and meticulousness -
+          Coding has been like playing with LEGOs again. Thanks to the amazing work of generations of physicists,
+          chemists, and electrical engineers, I get to live in this digital world where - with time and meticulousness -
           every bit can be set perfectly. And there are <em>almost</em> no stickers in sight ;)
         </p>
         <p>
