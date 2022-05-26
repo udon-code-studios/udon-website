@@ -24,6 +24,29 @@ function NavBar(): JSX.Element {
     }
   }, []);
 
+  // collapse navbar on scroll
+  const [collapsed, setCollapsed] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setCollapsed(true);
+      } else {
+        setCollapsed(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+  const codeSpring = useSpring({
+    opacity: collapsed ? 0 : 1,
+    height: collapsed ? 0 : 20,
+  });
+  const udonSpring = useSpring({
+    fontSize: collapsed ? "2rem" : "3rem",
+  });
+  const borderSpring = useSpring({
+    borderBottomWidth: collapsed ? 1 : 0,
+  });
+
   // burger menu
   const [showMenu, setShowMenu] = useState(false);
   const Trail: React.FC<{ open: boolean; children: any }> = ({ open, children }) => {
@@ -47,15 +70,25 @@ function NavBar(): JSX.Element {
   };
 
   return (
-    <div className="flex w-full justify-center">
+    <a.div
+      style={borderSpring}
+      className="sticky top-0 flex w-full justify-center border-zinc-300 bg-zinc-100 opacity-100 dark:border-zinc-700 dark:bg-black"
+    >
       <div className="flex w-full max-w-screen-lg items-center justify-between py-4 px-8">
         <Link href="/" passHref>
           <a>
             {/* logo */}
-            <div className="flex w-min flex-col items-center space-y-1" onClick={() => setShowMenu(false)}>
-              <h1 className="font-new-tegomin text-5xl">udon_</h1>
-              <p className="font-new-tegomin text-xl tracking-wider">code studios</p>
-            </div>
+            <a.div
+              className="flex w-min flex-col items-center space-y-1 decoration-current"
+              onClick={() => setShowMenu(false)}
+            >
+              <a.h1 style={udonSpring} className="font-new-tegomin text-5xl">
+                udon_
+              </a.h1>
+              <a.p style={codeSpring} className="w-max font-new-tegomin text-xl tracking-wider">
+                code studios
+              </a.p>
+            </a.div>
           </a>
         </Link>
 
@@ -183,7 +216,7 @@ function NavBar(): JSX.Element {
           </div>
         </div>
       </div>
-    </div>
+    </a.div>
   );
 }
 
