@@ -23,12 +23,6 @@ function NavBar(): JSX.Element {
 
   // burger menu
   const [showMenu, setShowMenu] = useState(false);
-  const menuSpring = useSpring({
-    from: { opacity: 0 },
-    to: {
-      opacity: showMenu ? 1 : 0,
-    },
-  });
   const Trail: React.FC<{ open: boolean; children: any }> = ({ open, children }) => {
     const items = React.Children.toArray(children);
     const trail = useTrail(items.length, {
@@ -57,7 +51,7 @@ function NavBar(): JSX.Element {
             {/* logo */}
             <div className="flex space-y-1 flex-col items-center w-min" onClick={() => setShowMenu(false)}>
               <h1 className="font-new-tegomin text-5xl">udon_</h1>
-              <p className="font-new-tegomin text-xl tracking-wide">code studios</p>
+              <p className="font-new-tegomin text-xl tracking-[1.95px]">code studio</p>
             </div>
           </a>
         </Link>
