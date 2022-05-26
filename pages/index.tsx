@@ -12,11 +12,9 @@ const Home: NextPage = () => {
       {/* page */}
       <div className="mx-auto flex w-full max-w-screen-sm flex-col space-y-4 py-12 px-4">
         <h1 className="pb-3 text-4xl font-bold">What is this?</h1>
+        <p>Udon Code Studios (UCS) is a fake software company focused on producing clean and beautiful code.</p>
         <p>
-          Udon Code Studios (UCS) is a fake software company focused on producing clean and beautiful code.
-        </p>
-        <p>
-          Our philosophy is focused on producing software of the highest quality. That means that even the parts you
+          Our core philosophy is to produce software of the highest quality. That means that even the parts you
           don&apos;t see need to be perfect.
         </p>
         <p className="px-14 text-center italic">
