@@ -55,6 +55,50 @@ export function PhSunBold(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function PhHamburger(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 256 256" {...props}>
+      <path
+        fill="currentColor"
+        d="M48.8 104h158.4a16 16 0 0 0 15.6-19.4C215.5 49.5 175.6 24 128 24S40.5 49.5 33.2 84.6A16 16 0 0 0 48.8 104ZM128 40c39.4 0 73.4 20.6 79.2 47.9H48.8C54.6 60.6 88.6 40 128 40Zm97 112.6l-37 14.8l-37-14.8a7.8 7.8 0 0 0-6 0l-37 14.8l-37-14.8a7.8 7.8 0 0 0-6 0l-40 16a8 8 0 0 0 3 15.4a8 8 0 0 0 3-.6l9-3.6v4.2a40 40 0 0 0 40 40h96a40 40 0 0 0 40-40v-10.6l15-6a8 8 0 0 0-6-14.8ZM200 184a24.1 24.1 0 0 1-24 24H80a24.1 24.1 0 0 1-24-24v-10.6l12-4.8l37 14.8a7.8 7.8 0 0 0 6 0l37-14.8l37 14.8a7.8 7.8 0 0 0 6 0l9-3.6Zm40-56a8 8 0 0 1-8 8H24a8 8 0 0 1 0-16h208a8 8 0 0 1 8 8Z"
+      ></path>
+    </svg>
+  );
+}
+
+export function PhHamburgerBold(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 256 256" {...props}>
+      <path
+        fill="currentColor"
+        d="M223.5 140.9L188 155.1l-35.5-14.2a11.7 11.7 0 0 0-9 0L108 155.1l-35.5-14.2a11.7 11.7 0 0 0-9 0l-40 16a12 12 0 1 0 9 22.2l3.5-1.4v6.3a44 44 0 0 0 44 44h96a44 44 0 0 0 44-44v-15.9l12.5-5a12 12 0 0 0-9-22.2ZM196 184a20.1 20.1 0 0 1-20 20H80a20.1 20.1 0 0 1-20-20v-15.9l8-3.2l35.5 14.2a11.7 11.7 0 0 0 9 0l35.5-14.2l35.5 14.2a11.7 11.7 0 0 0 9 0l3.5-1.4Zm36-84h-12.8a92 92 0 0 0-182.4 0H24a12 12 0 0 0 0 24h208a12 12 0 0 0 0-24ZM128 44a68.1 68.1 0 0 1 66.9 56H61.1A68.1 68.1 0 0 1 128 44Z"
+      ></path>
+    </svg>
+  );
+}
+
+export function PhListBold(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 256 256" {...props}>
+      <path
+        fill="currentColor"
+        d="M228 128a12 12 0 0 1-12 12H40a12 12 0 0 1 0-24h176a12 12 0 0 1 12 12ZM40 76h176a12 12 0 0 0 0-24H40a12 12 0 0 0 0 24Zm176 104H40a12 12 0 0 0 0 24h176a12 12 0 0 0 0-24Z"
+      ></path>
+    </svg>
+  );
+}
+
+export function PhXBold(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 256 256" {...props}>
+      <path
+        fill="currentColor"
+        d="M208.5 191.5a12 12 0 0 1 0 17a12.1 12.1 0 0 1-17 0L128 145l-63.5 63.5a12.1 12.1 0 0 1-17 0a12 12 0 0 1 0-17L111 128L47.5 64.5a12 12 0 0 1 17-17L128 111l63.5-63.5a12 12 0 0 1 17 17L145 128Z"
+      ></path>
+    </svg>
+  );
+}
+
 export function UilGithubAlt(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" {...props}>
