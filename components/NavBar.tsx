@@ -51,7 +51,7 @@ function NavBar(): JSX.Element {
             {/* logo */}
             <div className="flex space-y-1 flex-col items-center w-min" onClick={() => setShowMenu(false)}>
               <h1 className="font-new-tegomin text-5xl">udon_</h1>
-              <p className="font-new-tegomin text-xl tracking-[1.95px]">code studio</p>
+              <p className="font-new-tegomin text-xl tracking-wider">code studios</p>
             </div>
           </a>
         </Link>
