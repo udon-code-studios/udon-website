@@ -10,14 +10,13 @@ const Home: NextPage = () => {
       </Head>
 
       {/* page */}
-      <div className="w-full max-w-screen-sm flex flex-col py-12 mx-auto space-y-4 px-4">
-        <h1 className="font-bold text-4xl pb-3">What is this?</h1>
+      <div className="mx-auto flex w-full max-w-screen-sm flex-col space-y-4 py-12 px-4">
+        <h1 className="pb-3 text-4xl font-bold">What is this?</h1>
         <p>
-          Udon Code Studios (UCS) is a fake software company which provides a neutral ground for Leo and his friends to
-          dream up and implement our software fantasies.
+          Udon Code Studios (UCS) is a fake software company focused on producing clean and beautiful code.
         </p>
         <p>
-          Our philosophy is centered on producing software of the highest quality. That means that even the parts you
+          Our philosophy is focused on producing software of the highest quality. That means that even the parts you
           don&apos;t see need to be perfect.
         </p>
         <p className="px-14 text-center italic">
@@ -28,19 +27,19 @@ const Home: NextPage = () => {
         <p>
           Check out our{" "}
           <Link href="/projects">
-            <a className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200">
+            <a className="font-semibold underline decoration-2 underline-offset-2 duration-200 hover:text-zinc-400 dark:hover:text-zinc-300">
               projects
             </a>
           </Link>{" "}
           to see what we&apos;ve been up to. And{" "}
           <Link href="/people">
-            <a className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200">
+            <a className="font-semibold underline decoration-2 underline-offset-2 duration-200 hover:text-zinc-400 dark:hover:text-zinc-300">
               meet the team
             </a>
           </Link>{" "}
           behind them before you go.
         </p>
-        <h1 className="font-bold text-4xl pt-8 pb-3">Leo Battalora</h1>
+        <h1 className="pt-8 pb-3 text-4xl font-bold">Leo Battalora</h1>
         <p>
           Hello! I&apos;m Leo - the guy behind UCS. I really love udon noodes and occasionally do a bit coding on the
           side.
@@ -60,7 +59,7 @@ const Home: NextPage = () => {
           <Link href="https://github.com/leo6liu" passHref>
             <a
               target="_blank"
-              className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"
+              className="font-semibold underline decoration-2 underline-offset-2 duration-200 hover:text-zinc-400 dark:hover:text-zinc-300"
             >
               GitHub
             </a>
@@ -69,7 +68,7 @@ const Home: NextPage = () => {
           <Link href="https://twitter.com/LBattalora" passHref>
             <a
               target="_blank"
-              className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"
+              className="font-semibold underline decoration-2 underline-offset-2 duration-200 hover:text-zinc-400 dark:hover:text-zinc-300"
             >
               Twitter
             </a>
@@ -78,7 +77,7 @@ const Home: NextPage = () => {
           <Link href="https://www.linkedin.com/in/leo6/">
             <a
               target="_blank"
-              className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200"
+              className="font-semibold underline decoration-2 underline-offset-2 duration-200 hover:text-zinc-400 dark:hover:text-zinc-300"
             >
               LinkedIn
             </a>
@@ -88,7 +87,7 @@ const Home: NextPage = () => {
         <p>
           Mail me at{" "}
           <Link href="mailto:leo.battalora@gmail.com" passHref>
-            <a className="underline decoration-2 underline-offset-2 font-semibold dark:hover:text-zinc-300 hover:text-zinc-400 duration-200">
+            <a className="font-semibold underline decoration-2 underline-offset-2 duration-200 hover:text-zinc-400 dark:hover:text-zinc-300">
               leo.battalora@gmail.com
             </a>
           </Link>
