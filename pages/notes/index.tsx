@@ -59,7 +59,7 @@ const Notes: NextPage = () => {
           When you have a ssh key that was generated in PS (e.g.
           <code className="text-secondary dark:text-secondary-dark">&nbsp;ssh-keygen -t rsa -b 4096&nbsp;</code>) which
           you want to copy to a remote machine for automatic login (e.g. passwordless connections to remote machines via
-          VS Code's Remote - SSH extension):
+          VS Code&apos;s Remote - SSH extension):
         </p>
         <code className="bg-tertiary p-4 text-primary dark:bg-tertiary-dark dark:text-primary-dark">
           {`$USER_AT_HOST="your-user-name-on-host@hostname"`}
