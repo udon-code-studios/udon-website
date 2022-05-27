@@ -72,7 +72,7 @@ function NavBar(): JSX.Element {
   return (
     <a.div
       style={borderSpring}
-      className="sticky top-0 flex w-full justify-center border-zinc-300 bg-zinc-100 opacity-100 dark:border-zinc-700 dark:bg-black"
+      className="sticky top-0 flex w-full justify-center border-tertiary bg-bg dark:border-tertiary-dark dark:bg-bg-dark"
     >
       <div className="flex w-full max-w-screen-lg items-center justify-between py-4 px-8">
         <Link href="/" passHref>
@@ -102,7 +102,10 @@ function NavBar(): JSX.Element {
             </button>
             {/* menu contents */}
             <div
-              className="fixed bottom-0 top-0 left-0 right-0 z-10 mt-24 bg-zinc-100 py-10 dark:bg-black"
+              className={
+                "fixed bottom-0 top-0 left-0 right-0 z-10 bg-bg py-10 dark:bg-bg-dark" +
+                (collapsed ? " mt-16" : " mt-24")
+              }
               style={showMenu ? { opacity: 1 } : { opacity: 0 }}
             >
               <Trail open={showMenu}>
@@ -149,7 +152,7 @@ function NavBar(): JSX.Element {
           </div>
 
           {/* desktop */}
-          <div className="hidden items-center space-x-5 text-zinc-600 dark:text-zinc-400 sm:flex">
+          <div className="hidden items-center space-x-5 text-secondary dark:text-secondary-dark sm:flex">
             <Link href="/projects" passHref>
               <a
                 className={

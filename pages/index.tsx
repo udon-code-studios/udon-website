@@ -11,7 +11,7 @@ const Home: NextPage = () => {
 
       {/* page */}
       <div className="mx-auto flex w-full max-w-screen-sm flex-col space-y-4 py-12 px-4">
-        <h1 className="pb-3 text-4xl font-bold">What is this?</h1>
+        <h1 className="pb-3 text-4xl font-semibold">What is this?</h1>
         <p>Udon Code Studios (UCS) is a fake software company focused on producing clean and beautiful code.</p>
         {/* <p>
           Our core philosophy is to produce software of the highest quality. That means that even the parts you
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         <p>
           Check out our{" "}
           <Link href="/projects">
-            <a className="font-semibold underline decoration-2 underline-offset-2 duration-200 hover:text-zinc-400 dark:hover:text-zinc-300">
+            <a className="font-semibold underline decoration-2 underline-offset-2 duration-200 hover:text-zinc-400">
               projects
             </a>
           </Link>{" "}
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
           </Link>{" "}
           behind them before you go.
         </p>
-        <h1 className="pt-8 pb-3 text-4xl font-bold">Leo Battalora</h1>
+        <h1 className="pt-8 pb-3 text-4xl font-semibold">Leo Battalora</h1>
         <p>
           Hello! I&apos;m Leo - the guy behind UCS. I really love udon noodes and occasionally do a bit coding on the
           side.
