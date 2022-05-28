@@ -104,9 +104,9 @@ function NavBar(): JSX.Element {
             <div
               className={
                 "fixed bottom-0 top-0 left-0 right-0 z-20 bg-bg py-10 dark:bg-bg-dark" +
-                (collapsed ? " mt-16" : " mt-24")
+                (collapsed ? " mt-16" : " mt-24") +
+                (showMenu ? "" : " hidden")
               }
-              style={showMenu ? { opacity: 1 } : { opacity: 0 }}
             >
               <Trail open={showMenu}>
                 <Link href="/projects" passHref>
