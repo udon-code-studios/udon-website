@@ -72,7 +72,7 @@ function NavBar(): JSX.Element {
   return (
     <a.div
       style={borderSpring}
-      className="sticky top-0 flex w-full justify-center border-tertiary bg-bg dark:border-tertiary-dark dark:bg-bg-dark"
+      className="sticky top-0 z-10 flex w-full justify-center border-tertiary bg-bg dark:border-tertiary-dark dark:bg-bg-dark"
     >
       <div className="flex w-full max-w-screen-lg items-center justify-between py-4 px-8">
         <Link href="/" passHref>
@@ -103,7 +103,7 @@ function NavBar(): JSX.Element {
             {/* menu contents */}
             <div
               className={
-                "fixed bottom-0 top-0 left-0 right-0 z-10 bg-bg py-10 dark:bg-bg-dark" +
+                "fixed bottom-0 top-0 left-0 right-0 z-20 bg-bg py-10 dark:bg-bg-dark" +
                 (collapsed ? " mt-16" : " mt-24")
               }
               style={showMenu ? { opacity: 1 } : { opacity: 0 }}
