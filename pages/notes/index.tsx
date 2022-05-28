@@ -31,7 +31,7 @@ const Notes: NextPage = () => {
         {/* Mount external drive in WSL */}
         <h2
           id="mount-external-drive-in-wsl"
-          className="scroll-mt-14 pt-8 text-2xl font-semibold text-secondary dark:text-secondary-dark"
+          className="scroll-mt-14 pt-10 text-2xl font-semibold text-secondary dark:text-secondary-dark"
         >
           Mount external drive in WSL
         </h2>
@@ -50,7 +50,7 @@ const Notes: NextPage = () => {
         {/* ssh-copy-id in PowerShell */}
         <h2
           id="ssh-copy-id-in-powershell"
-          className="scroll-mt-14 pt-8 text-2xl font-semibold text-secondary dark:text-secondary-dark"
+          className="scroll-mt-14 pt-10 text-2xl font-semibold text-secondary dark:text-secondary-dark"
         >
           <code>ssh-copy-id</code> in PowerShell
         </h2>
