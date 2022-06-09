@@ -20,39 +20,75 @@ const Projects: NextPage = () => {
           <Link href="https://fox.subparprogramming.org" passHref>
             <a target="_blank" className="group">
               <div className="flex items-center space-x-4">
-                <div className="w-36">
-                  <Image
-                    src="/assets/projects/the-quick-brown-fox.png"
-                    alt="The Quick Brown Fox"
-                    layout="responsive"
-                    width="400"
-                    height="400"
-                  />
+                <div className="w-1/4 p-2 text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
+                  <icons.TheQuickBrownFox />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex w-3/4 flex-col">
                   <h3 className="text-lg text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
                     The Quick Brown Fox
                   </h3>
                   <p className="text-sm text-quaternary duration-200 group-hover:text-zinc-700 dark:group-hover:text-secondary-dark">
-                    Functional and beautiful hiragana and katakana charts
+                    The best hiragana and katakana charts on the internet
                   </p>
                 </div>
               </div>
             </a>
           </Link>
+
           {/* BibleDev */}
-          <Link href="https://fox.subparprogramming.org" passHref>
+          <Link href="https://bible.subparprogramming.org" passHref>
             <a target="_blank" className="group">
               <div className="flex items-center space-x-4">
-                <div className="w-36 p-2 text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
-                  <icons.BibleDev className="" />
+                <div className="w-1/4 p-2 text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
+                  <icons.BibleDev />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex w-3/4 flex-col">
                   <h3 className="text-lg text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
                     BibleDev
                   </h3>
                   <p className="text-sm text-quaternary duration-200 group-hover:text-zinc-700 dark:group-hover:text-secondary-dark">
-                    A community driven project to document the development history of the Holy Bible
+                    A community driven effort to document the development history of the Holy Bible
+                  </p>
+                </div>
+              </div>
+            </a>
+          </Link>
+
+          {/* AlgoSim */}
+          <Link href="https://algosim.subparprogramming.org/algo-v1" passHref>
+            <a target="_blank" className="group">
+              <div className="flex items-center space-x-4">
+                <div className="w-1/4 p-2 text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
+                  <icons.AlgoSim />
+                </div>
+                <div className="flex w-3/4 flex-col">
+                  <h3 className="text-lg text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
+                    AlgoSim
+                  </h3>
+                  <p className="text-sm text-quaternary duration-200 group-hover:text-zinc-700 dark:group-hover:text-secondary-dark">
+                    Simulate your own custom algorithms on historical market data
+                  </p>
+                </div>
+              </div>
+            </a>
+          </Link>
+
+          {/* Tread */}
+          <Link
+            href="https://www.figma.com/file/TWYV7xecdrEHwpqji7a0ZE/Daily-Workout-Design-Draft-2?node-id=0%3A1"
+            passHref
+          >
+            <a target="_blank" className="group">
+              <div className="flex items-center space-x-4">
+                <div className="w-1/4 p-2 text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
+                  <icons.Tread />
+                </div>
+                <div className="flex w-3/4 flex-col">
+                  <h3 className="text-lg text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
+                    Tread
+                  </h3>
+                  <p className="text-sm text-quaternary duration-200 group-hover:text-zinc-700 dark:group-hover:text-secondary-dark">
+                    UI/UX design for a barefoot running transition mobile app
                   </p>
                 </div>
               </div>
