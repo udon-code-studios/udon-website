@@ -17,7 +17,7 @@ const Home: NextPage = () => {
           Our core philosophy is to produce software of the highest quality. That means that even the parts you
           don&apos;t see need to be perfect.
         </p> */}
-        <p className="px-10 sm:px-14 text-center italic">
+        <p className="px-10 text-center italic sm:px-14">
           &quot;For you to sleep well at night, the aesthetic, the quality, has to be carried all the way
           through.&quot;&nbsp;&nbsp;&nbsp;
           <span className="whitespace-nowrap">— Steve Jobs</span>
@@ -39,8 +39,9 @@ const Home: NextPage = () => {
         </p>
         <h2 className="pt-8 pb-3 text-2xl font-semibold text-primary dark:text-primary-dark">Leo Battalora</h2>
         <p>
-          Hello! I&apos;m Leo - the guy behind UCS. I really love udon noodes and occasionally do a bit coding on the
-          side.
+          Hello! I&apos;m Leo - the guy behind UCS. I'm an Electrical Engineering graduate of Temple University where I
+          managed to escape with a 4.0 GPA. In 2021, I was selected as a Goldwater Scholar for my work in CNS drug
+          discovery using machine learning.
         </p>
         <p>
           As a child I really loved LEGOs for how they would each snap together perfectly. I hated the stickers that
@@ -89,6 +90,7 @@ const Home: NextPage = () => {
               leo.battalora@gmail.com
             </a>
           </Link>
+          .
         </p>
       </div>
     </>
