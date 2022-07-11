@@ -39,9 +39,9 @@ const Home: NextPage = () => {
         </p>
         <h2 className="pt-8 pb-3 text-2xl font-semibold text-primary dark:text-primary-dark">Leo Battalora</h2>
         <p>
-          Hello! I&apos;m Leo - the guy behind UCS. I'm an Electrical Engineering graduate of Temple University where I
-          managed to escape with a 4.0 GPA. In 2021, I was selected as a Goldwater Scholar for my work in CNS drug
-          discovery using machine learning.
+          Hello! I&apos;m Leo - the guy behind UCS. I&apos;m an Electrical Engineering graduate of Temple University
+          where I managed to escape with a 4.0 GPA. In 2021, I was selected as a Goldwater Scholar for my work in CNS
+          drug discovery using machine learning.
         </p>
         <p>
           As a child I really loved LEGOs for how they would each snap together perfectly. I hated the stickers that
