@@ -5,7 +5,6 @@ import Link from "next/link";
 import * as icons from "../../components/icons";
 
 const Projects: NextPage = () => {
-  const link = "https://deno.land/x/riot_api/mod.ts";
   return (
     <>
       <Head>
