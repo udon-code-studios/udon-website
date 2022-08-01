@@ -77,7 +77,7 @@ const Projects: NextPage = () => {
           </Link>
 
           {/* BibleDev */}
-          <Link href="https://bible.subparprogramming.org" passHref>
+          <Link href="https://bible.udon.studio" passHref>
             <a target="_blank" className="group">
               <div className="flex items-center space-x-4">
                 <div className="w-1/4 p-2 text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
