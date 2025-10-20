@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       {/* page */}
       <div className="mx-auto flex w-full max-w-screen-sm flex-col space-y-4 py-12 px-4 text-primary dark:text-secondary-focus-dark">
         <h1 className="pb-3 text-4xl font-semibold text-primary dark:text-primary-dark">What is this?</h1>
-        <p>Udon Code Studios (UCS) is a fake software company focused on producing clean and beautiful code.</p>
+        <p>Udon Code Studios (UCS) is a fake software company.</p>
         {/* <p>
           Our core philosophy is to produce software of the highest quality. That means that even the parts you
           don&apos;t see need to be perfect.
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
         <h2 className="pt-8 pb-3 text-2xl font-semibold text-primary dark:text-primary-dark">Leo Battalora</h2>
         <p>
           Hello! I&apos;m Leo - the guy behind UCS. I&apos;m an Electrical Engineering graduate of Temple University
-          where I managed to escape with a 4.0 GPA. In 2021, I was selected as a Goldwater Scholar for my work in CNS
+          where I sniped a 4.00 GPA. In 2021, I was selected as a Goldwater Scholar for my work in CNS
           drug discovery using machine learning.
         </p>
         <p>
