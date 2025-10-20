@@ -39,7 +39,7 @@ const Home: NextPage = () => {
         </p>
         <h2 className="pt-8 pb-3 text-2xl font-semibold text-primary dark:text-primary-dark">Leo Battalora</h2>
         <p>
-          Hello! I&apos;m Leo - the guy behind UCS. I&apos;m an Electrical Engineering graduate of Temple University
+          Hello! I&apos;m Leo. I&apos;m an Electrical Engineering graduate of Temple University
           where I sniped a 4.00 GPA. In 2021, I was selected as a Goldwater Scholar for my work in CNS
           drug discovery using machine learning.
         </p>
