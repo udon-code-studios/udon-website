@@ -16,6 +16,25 @@ const Projects: NextPage = () => {
         <h1 className="text-4xl font-semibold text-primary dark:text-primary-dark">Projects</h1>
         <p className="pb-8 italic text-quaternary">List of projects we&apos;re proud of</p>
         <div className="grid grid-flow-row grid-cols-1 gap-8 px-4 sm:px-10 md:grid-cols-2 md:px-0">
+          {/* The Quick Brown Fox */}
+          <Link href="https://fox.udon.studio" passHref>
+            <a target="_blank" className="group">
+              <div className="flex items-center space-x-4">
+                <div className="w-1/4 p-2 text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
+                  <icons.TheQuickBrownFox />
+                </div>
+                <div className="flex w-3/4 flex-col">
+                  <h3 className="text-lg text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
+                    The Quick Brown Fox
+                  </h3>
+                  <p className="text-sm text-quaternary duration-200 group-hover:text-zinc-700 dark:group-hover:text-secondary-dark">
+                    The best hiragana and katakana charts on the internet
+                  </p>
+                </div>
+              </div>
+            </a>
+          </Link>
+
           {/* LoL Time */}
           <Link href="https://lol.udon.studio" passHref>
             <a target="_blank" className="group">
@@ -24,7 +43,7 @@ const Projects: NextPage = () => {
                   <icons.LoLTime />
                 </div>
                 <div className="flex w-3/4 flex-col">
-                  <h3 className="text-lg text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
+                  <h3 className="text-lg text-secondary line-through duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
                     LoL Time
                   </h3>
                   <p className="text-sm text-quaternary duration-200 group-hover:text-zinc-700 dark:group-hover:text-secondary-dark">
@@ -47,7 +66,7 @@ const Projects: NextPage = () => {
                 <icons.RiotAPI />
               </div>
               <div className="flex w-3/4 flex-col">
-                <h3 className="text-lg text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
+                <h3 className="text-lg text-secondary line-through duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
                   riot_api
                 </h3>
                 <p className="text-sm text-quaternary duration-200 group-hover:text-zinc-700 dark:group-hover:text-secondary-dark">
@@ -56,25 +75,6 @@ const Projects: NextPage = () => {
               </div>
             </div>
           </a>
-
-          {/* The Quick Brown Fox */}
-          <Link href="https://fox.udon.studio" passHref>
-            <a target="_blank" className="group">
-              <div className="flex items-center space-x-4">
-                <div className="w-1/4 p-2 text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
-                  <icons.TheQuickBrownFox />
-                </div>
-                <div className="flex w-3/4 flex-col">
-                  <h3 className="text-lg text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
-                    The Quick Brown Fox
-                  </h3>
-                  <p className="text-sm text-quaternary duration-200 group-hover:text-zinc-700 dark:group-hover:text-secondary-dark">
-                    The best hiragana and katakana charts on the internet
-                  </p>
-                </div>
-              </div>
-            </a>
-          </Link>
 
           {/* BibleDev */}
           <Link href="https://bible.udon.studio" passHref>
@@ -103,7 +103,7 @@ const Projects: NextPage = () => {
                   <icons.AlgoSim />
                 </div>
                 <div className="flex w-3/4 flex-col">
-                  <h3 className="text-lg text-secondary duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
+                  <h3 className="text-lg text-secondary line-through duration-200 group-hover:text-zinc-800 dark:text-secondary-dark dark:group-hover:text-secondary-focus-dark">
                     AlgoSim
                   </h3>
                   <p className="text-sm text-quaternary duration-200 group-hover:text-zinc-700 dark:group-hover:text-secondary-dark">
